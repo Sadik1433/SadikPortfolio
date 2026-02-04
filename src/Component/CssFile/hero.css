@@ -1,0 +1,70 @@
+.hero-container{
+    min-height: 100vh;
+    max-height: min-content;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.content-container{
+    min-height: 500px;
+    min-width: 1200px;
+    display: flex;
+}
+.header-section{
+    width: 800px;
+    max-height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 0px 10px;
+    text-align: justify;
+}
+.name-section{
+    color: var(--head-color);
+    font-size: 20px;    
+    /* font-style: italic; */
+    font-family: sans-serif;
+}
+.icons-container{
+    display: flex;
+    align-self: center;
+    gap: 40px;
+    padding: 10px 20px ;
+    /* border: 2px solid white; */
+}
+.text-content-container{
+    /* background-color: yellow; */
+    padding: 10px 0px;
+    font-size: 24px;
+    font-weight: 200;
+}
+.icons-container .icons{
+    border: 2px groove white;
+    padding: 8px 15px ;
+    cursor: pointer;
+}
+.resume-container{
+    /* background-color: aqua; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.resume-btn{
+    padding: 10px 8px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.image-section{
+    width: 400px;
+    /* background-color: wheat; */
+    padding: 5px 10px;
+}
+.image-section .profile-image{
+    min-width: 380px;
+    min-height: max-content;
+    border: 1px solid white;
+}

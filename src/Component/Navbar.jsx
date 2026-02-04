@@ -1,0 +1,104 @@
+import './CssFile/navbar.css';
+import { useState, useEffect } from "react";
+import { Link } from "react-scroll";
+// import { FaSun, FaMoon } from 'react-icons/fa';
+
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [theme, setTheme] = useState("dark");
+
+  const handleLinkClick = () => {
+    setIsOpen(false);
+  };
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === "light" ? "dark" : "light"));
+  };
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+  
+  return (
+    <nav className="navbar-container">
+      <div className="menu-icon" onClick={toggleMenu}>
+        ☰
+      </div>
+      <ul className={`nav-links ${isOpen ? "active" : ""}`}>
+        <Link
+          to="hero"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          onClick={handleLinkClick}
+          activeClass="active"
+          className="list-btn"
+        >
+          <li>Home</li>
+        </Link>
+
+        <Link
+          to="skills"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          onClick={handleLinkClick}
+          activeClass="active"
+          className="list-btn"
+        >
+          <li>Skill</li>
+        </Link>
+        <Link
+          to="about"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          onClick={handleLinkClick}
+          activeClass="active"
+          className="list-btn"
+        >
+          <li>Project</li>
+        </Link>
+
+        <Link
+          to="service"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          onClick={handleLinkClick}
+          activeClass="active"
+          className="list-btn"
+        >
+          Services
+        </Link>
+        <Link
+          to="contact"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          onClick={handleLinkClick}
+          activeClass="active"
+          className="list-btn"
+        >
+          <li> Contact</li>
+        </Link>
+
+        <button onClick={toggleTheme} className="toggle-theme">
+         {/* {theme === 'light' ? <FaMoon /> : <FaSun />} */}
+         theme
+        </button>
+      </ul>
+    </nav>
+  );
+};
+
+export default Navbar;
