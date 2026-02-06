@@ -1,7 +1,7 @@
 import './CssFile/navbar.css';
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-// import { FaSun, FaMoon } from 'react-icons/fa';
+import { FaSun, FaMoon } from 'react-icons/fa';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -93,8 +93,7 @@ const Navbar = () => {
         </Link>
 
         <button onClick={toggleTheme} className="toggle-theme">
-         {/* {theme === 'light' ? <FaMoon /> : <FaSun />} */}
-         theme
+         {theme === 'light' ? <FaMoon /> : <FaSun />}
         </button>
       </ul>
     </nav>

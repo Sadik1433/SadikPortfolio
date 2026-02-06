@@ -7,6 +7,7 @@ import Hero from "./Component/Hero";
 import Skills from "./Component/Skills";
 import About from "./Component/About";
 import Project from "./Component/Project";
+import Service from "./Component/Service";
 
 const App = () => {
   
@@ -20,6 +21,7 @@ const App = () => {
       <Hero />
       <Skills />
       <Project />
+      <Service />
       <About />
     </div>
   );

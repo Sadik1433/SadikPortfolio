@@ -1,13 +1,11 @@
-import './CssFile/project.css'
-import Icons from './Icons';
+import "./CssFile/project.css";
 
 const Project = () => {
   return (
-    <section id='project' className='project-section'>
+    <section id="project" className="project-section">
       <h1>Projects</h1>
-      <Icons />
     </section>
-  )
-}
+  );
+};
 
-export default Project
+export default Project;

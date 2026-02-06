@@ -1,0 +1,9 @@
+.service-section{
+    min-height: 100vh;
+    max-height: min-content;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

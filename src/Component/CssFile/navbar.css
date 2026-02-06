@@ -57,23 +57,16 @@
   font-weight: 500;
 }
 
-.list-btn:hover {
-  color: #7f38ec;
-  cursor: pointer;
-  box-shadow: 3px 0px 10px white;
-  background: transparent;
-}
-
 .active {
-  /* color: #7f38ec; */
+  position: relative;
+  left: 0;
   color: var(--text-color);
-  background: var(--bg-color);
+  background: transparent;
+  border-radius: 2px;
   box-shadow:
-    inset 2px 2px 1px rgba(12, 174, 219, 0.895),
-    inset -2px -2px 5px rgba(8, 221, 232, 0.7);
+    inset 0px 0px 0px rgba(12, 174, 219, 0.895),
+    inset -0px -10px 18px rgba(8, 221, 232, 0.7);
   transition: all 1s ease-in-out;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
   cursor: pointer;
 }
 
