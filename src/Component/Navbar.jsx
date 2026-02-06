@@ -55,7 +55,7 @@ const Navbar = () => {
           <li>Skill</li>
         </Link>
         <Link
-          to="about"
+          to="project"
           spy={true}
           smooth={true}
           offset={-70}

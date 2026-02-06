@@ -94,8 +94,8 @@
     max-width: 150px;
     display: flex;
     border-left: 2px solid white;
-    border-bottom: 1px solid white;
-    border-radius: 8px;
+    box-shadow: 2px 1px 10px blue;
+    border-radius: 5px;
     padding: 2px 8px ;
 }
 .skill-card .icon-container{
@@ -111,6 +111,10 @@
     line-height: 1.8rem;
 }
 @media (max-width: 768px) {
+  
+.skill-card .icon-container{
+  min-width: 100px;
+}
   .edu-head {
     font-size: 1.3rem;
   }

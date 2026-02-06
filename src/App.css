@@ -36,11 +36,3 @@
   --button-text-color: #020617;
   --shadow: rgba(94, 234, 212, 0.35);
 }
-.container{
-  min-height: 100vh;
-  width: auto;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  border-bottom: 2px solid blue;
-  margin:2px 0px ;
-}

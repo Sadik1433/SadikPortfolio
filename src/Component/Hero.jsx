@@ -1,20 +1,23 @@
 import "./CssFile/hero.css";
-// import profile from './assets/profile.jpg';
+import profile from './assets/avatar.png';
 
 const Hero = () => {
   return (
     <section id="hero" className="hero-container">
       <div className="content-container">
-        <div className="header-section">
+        <div className="header-section" data-aos="fade-right">
           <div className="name-section">
-            <h1>Name -------</h1>
+            <span className="text-content">
+             Hi, I am
+            </span>
+            <br />
+            <h1 className="name-head">S.Sadik</h1>
           </div>
           <div className="text-content-container">
-            <p>
-              Hero Section Lorem ipsum dolor sit, amet consectetur adipisicing
-              elit. Consequatur quo similique amet reprehenderit quasi iusto
-              doloremque tempore nemo sequi recusandae! At, fugit assumenda.
-              Fugiat quod vero ipsum natus illo illum.
+            <p className="text-content">
+              I'm a passionate Web Developer with expertise in React, Java,
+              python. I love building intuitive and efficient solutions that
+              make a difference.
             </p>
           </div>
           <div className="icons-container">
@@ -27,8 +30,8 @@ const Hero = () => {
             <button className="resume-btn">Download</button>
           </div>
         </div>
-        <div className="image-section">
-          <img  src="" alt="image" className="profile-image"/>
+        <div className="image-section" data-aos="fade-left">
+          <img src={profile} alt="image" className="profile-image" />
         </div>
       </div>
     </section>

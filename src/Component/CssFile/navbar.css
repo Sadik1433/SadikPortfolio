@@ -1,7 +1,7 @@
 .navbar-container {
   min-height: 70px;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   background: var(--navbar-bg-color);
   color: var(--text-color);
@@ -58,17 +58,22 @@
 }
 
 .list-btn:hover {
-  transition: ease-in-out 0.2s;
   color: #7f38ec;
   cursor: pointer;
+  box-shadow: 3px 0px 10px white;
+  background: transparent;
 }
 
 .active {
-  color: #7f38ec;
-  border: 1px solid #7f38ec;
-  border-bottom-left-radius: 20px;
+  /* color: #7f38ec; */
+  color: var(--text-color);
+  background: var(--bg-color);
+  box-shadow:
+    inset 2px 2px 1px rgba(12, 174, 219, 0.895),
+    inset -2px -2px 5px rgba(8, 221, 232, 0.7);
+  transition: all 1s ease-in-out;
   border-top-right-radius: 20px;
-  transition: all 0.1s ease-in-out;
+  border-bottom-right-radius: 20px;
   cursor: pointer;
 }
 
@@ -80,7 +85,7 @@
   border: none;
 }
 @media (max-width: 768px) {
-  .navbar-container{
+  .navbar-container {
     min-height: 80px;
     justify-content: flex-end;
   }
