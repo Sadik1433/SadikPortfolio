@@ -4,6 +4,47 @@
     background-color: var(--bg-color);
     color: var(--text-color);
     display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+
+}
+.service-header{
+    align-self: center;
+    margin: 10px auto;
+}
+.services-heading{
+    font-size: 36px;
+    color: var(--heading-color);
+}
+.service-container{
+    display: flex;
     justify-content: space-around;
     align-items: center;
+}
+.service-image .service-img{
+    width: 400px;
+    min-height: 200px;
+    display: flex;
+}
+.services-grid{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 10px;
+    align-self: center;
+}
+.service-card{
+    display: flex;
+    font-size: 20px;
+    padding: 10px 2px ;
+}
+.service-icon{
+    width: 60px;
+    align-self: center;
+}
+.service-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 35px;
 }

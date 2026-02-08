@@ -1,61 +1,76 @@
-import './CssFile/service.css'
+import "./CssFile/service.css";
+import image from "./assets/avatar.png";
 
-import { FaCode, FaMobileAlt, FaDatabase, FaLaptopCode, FaPalette, FaPlug } from 'react-icons/fa';
-
+import {
+  FaCode,
+  FaMobileAlt,
+  FaDatabase,
+  FaLaptopCode,
+  FaPalette,
+  FaPlug,
+} from "react-icons/fa";
 
 const servicesData = [
   {
-    icon: <FaCode />,
+    icon: <FaCode size={30}/>,
     title: "Frontend Development",
     description:
       "Building responsive and dynamic user interfaces using React, HTML, and CSS.",
   },
   {
-    icon: <FaMobileAlt />,
+    icon: <FaMobileAlt size={30}/>,
     title: "Mobile Optimization",
     description:
       "Creating mobile-first designs and ensuring cross-device compatibility.",
   },
   {
-    icon: <FaDatabase />,
+    icon: <FaDatabase size={30} />,
     title: "Backend & Databases",
     description:
       "RESTful APIs and databases using Node.js, Express, and MongoDB.",
   },
   {
-    icon: <FaLaptopCode />,
+    icon: <FaLaptopCode size={30} />,
     title: "Full-Stack Projects",
     description:
       "Combining frontend and backend to deliver complete web solutions.",
   },
   {
-  icon: <FaPalette />,
-  title: 'UI/UX Design',
-  description: 'Designing intuitive interfaces and user journeys using Figma and modern trends.',
-},
-{
-  icon: <FaPlug />,
-  title: 'API Integration',
-  description: 'Connecting to third-party APIs like Google Maps, OpenAI, and more.',
-},
-
+    icon: <FaPalette size={30} />,
+    title: "UI/UX Design",
+    description:
+      "Designing intuitive interfaces and user journeys using Figma and modern trends.",
+  },
+  {
+    icon: <FaPlug size={30} />,
+    title: "API Integration",
+    description:
+      "Connecting to third-party APIs like Google Maps, OpenAI, and more.",
+  },
 ];
 
 const Services = () => {
   return (
-    <section id="service"  className="service-section" data-aos="fade-right">
-      <div className="services-section" >
+    <section id="service" className="service-section" data-aos="fade-right">
+      <div className="service-header">
         <h2 className="services-heading">Services</h2>
-        <div className="services-grid">
+      </div>
+      <div className="service-container">
+        <ul className="services-grid">
           {servicesData.map((service, index) => (
-            <div key={index} className="service-card">
+            <li key={index} className="service-card">
               <div className="service-icon">
                 <span>{service.icon}</span>
               </div>
+              <div className="service-content">
               <h3>{service.title}</h3>
               <p>{service.description}</p>
-            </div>
+              </div>
+            </li>
           ))}
+        </ul>
+        <div className="service-image">
+          <img src={image} alt="service-image" className="service-img" />
         </div>
       </div>
     </section>
