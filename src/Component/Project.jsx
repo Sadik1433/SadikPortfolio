@@ -58,7 +58,7 @@ const Project = () => {
       <ul className="projects-grid">
         {projectData.map((project, index) => (
           <li
-            class="project-card"
+            className="project-card"
             key={index}
             style={{
               backgroundImage: `url(${profile})`,
@@ -70,21 +70,21 @@ const Project = () => {
               borderRadius: "12px",
             }}
           >
-            <div class="project-content">
+            <div className="project-content">
               <h3>{project.title}</h3>
               <p>{project.description}</p>
 
-              <div class="project-tags">
+              <div className="project-tags">
                 <span>{project.languages[0]}</span>
                 <span>{project.languages[1]}</span>
                 <span>{project.languages[2]}</span>
               </div>
 
-              <div class="project-actions">
-                <a href={project.liveDemo} class="btn primary">
+              <div className="project-actions">
+                <a href={project.liveDemo} className="btn primary">
                   Live Demo
                 </a>
-                <a href="" class="btn outline">
+                <a href="" className="btn outline">
                   GitHub
                 </a>
               </div>
