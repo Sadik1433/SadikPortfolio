@@ -1,9 +1,118 @@
-.project-section{
-    min-height: 100vh;
-    max-height: min-content;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.project-section {
+  min-height: 100vh;
+  max-height: min-content;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 10px 20px;
+}
+.project-para-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+}
+.project-header {
+  text-align: center;
+  font-size: 35px;
+}
+.project-para {
+  text-align: center;
+  font-size: 25px;
+  font-weight: semi-bold;
+  line-height: 50px;
+  margin: 10px auto;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+}
+.project-card {
+  position: relative;
+  width: 320px;
+  background: #111;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 1px 20px rgba(232, 217, 217, 0.671);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+.project-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 18px;
+  color: #fff;
+}
+
+.project-content h3 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.project-content p {
+  font-size: 1.19rem;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+.project-tags {
+  margin: 12px 0;
+  position: absolute;
+  bottom: 50px;
+}
+
+.project-tags span {
+  display: inline-block;
+  background: #222;
+  color: #00e5ff;
+  padding: 8px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  margin-right: 6px;
+}
+
+.project-actions {
+  width: 200px;
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.btn {
+  flex: 1;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background: #00e5ff;
+  color: #000;
+}
+
+.btn.primary:hover {
+  background: #00bcd4;
+}
+
+.btn.outline {
+  border: 1px solid #00e5ff;
+  color: #00e5ff;
+}
+
+.btn.outline:hover {
+  background: #00e5ff;
+  color: #000;
 }

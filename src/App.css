@@ -36,3 +36,14 @@
   --button-text-color: #020617;
   --shadow: rgba(94, 234, 212, 0.35);
 }
+
+body{
+  overflow: hidden;
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+li{
+  list-style: none;
+}

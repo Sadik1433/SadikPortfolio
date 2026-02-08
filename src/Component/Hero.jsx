@@ -45,8 +45,8 @@ const socialData = [
 const Hero = () => {
   return (
     <section id="hero" className="hero-container">
-      <div className="content-container">
-        <div className="header-section" data-aos="fade-right">
+      <div className="content-container" >
+        <div className="header-section" data-aos="fade-right" >
           <div className="name-section">
             <span className="text-content">Hi, I am</span>
             <br />

@@ -12,7 +12,7 @@ import Service from "./Component/Service";
 const App = () => {
   
   useEffect(() => {
-    AOS.init({ duration: 1500, once: true });
+    AOS.init({ duration: 1500, once: false, easing: "ease-in-out", mirror: true });
   }, []);
 
   return (
