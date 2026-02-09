@@ -1,48 +1,7 @@
 import "./CssFile/project.css";
 import profile from "./assets/avatar.png";
 
-const projectData = [
-  {
-    id: 1,
-    title: "Tic-Tac-Toe",
-    description: "Practice DOM manipulation and game logic.",
-    languages: ["HTML", "CSS", "JavaScript"],
-    gitHub: "#",
-    liveDemo: "#",
-  },
-  {
-    id: 2,
-    title: "Portfolio Website",
-    description: "Showcase your projects and skills with a personal website.",
-    languages: ["HTML", "CSS", "JavaScript"],
-    gitHub: "#",
-    liveDemo: "https://sadikportfolio.netlify.app/",
-  },
-  {
-    id: 3,
-    title: "EmojiGame",
-    description: "Learn array manipulation and dynamic rendering.",
-    languages: ["HTML", "CSS", "JavaScript"],
-    gitHub: "#",
-    liveDemo: "#",
-  },
-  {
-    id: 4,
-    title: "Job Search",
-    description: "Build a responsive layout mimicking real-world apps.",
-    languages: ["HTML", "CSS", "JavaScript"],
-    gitHub: "#",
-    liveDemo: "#",
-  },
-  {
-    id: 5,
-    title: "Todolist",
-    description: "Understand data persistence and user interaction.",
-    languages: ["HTML", "CSS", "JavaScript"],
-    gitHub: "#",
-    liveDemo: "#",
-  },
-];
+import { projectData } from "../data/data.jsx";
 
 
 const aosAnimations = ["fade-right", "fade-left"];

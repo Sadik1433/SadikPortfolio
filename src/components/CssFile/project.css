@@ -15,7 +15,7 @@
 .project-header {
   text-align: center;
   font-size: 40px;
-  text-shadow: 1px 1px 5px var(--shadow-color);
+  : 1px 1px 5px var(--shadow-color);
   text-transform: uppercase;
   color: var(--heading-color);
 }
@@ -60,7 +60,7 @@
 .project-content {
   padding: 18px;
   color: var(--sub-heading-color);
-  text-shadow: 1px 1px 2px var(--heading-color);
+  : 1px 1px 2px var(--heading-color);
 }
 
 .project-content h3 {

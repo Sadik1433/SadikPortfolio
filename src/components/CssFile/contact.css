@@ -1,9 +1,11 @@
 .contact-section {
+  min-height: 100vh;
+  width: 100%;
   background-color: var(--bg-color);
   color: var(--text-color);
   display: flex;
   flex-direction: column;
-  padding: 10px 0px;
+  padding: 0px 0px;
 }
 
 .contact-heading-container {
@@ -11,10 +13,10 @@
   text-align: center;
   margin: 10px auto;
 }
-.contact-heading{
-  color: var(--heading-color); 
+
+.contact-heading {
+  color: var(--heading-color);
   font-size: 40px;
-  text-shadow: 1px 1px 5px var(--shadow-color);
   text-transform: uppercase;
 }
 

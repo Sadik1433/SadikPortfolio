@@ -1,11 +1,11 @@
 .service-section {
     min-height: 100vh;
-    max-height: min-content;
+    width: 100%;
     background-color: var(--bg-color);
     color: var(--text-color);
     display: flex;
     flex-direction: column;
-    padding: 10px 20px 40px 20px;
+    padding: 20px 0px;
 }
 
 .service-header {
@@ -16,22 +16,19 @@
 .services-heading {
     color: var(--heading-color);
     font-size: 40px;
-    text-shadow: 1px 1px 5px var(--shadow-color);
     text-transform: uppercase;
 }
 
 .service-container {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     flex-wrap: wrap;
     gap: 20px;
 }
 
 .service-image .service-img {
-    width: 100%;
-    max-width: 400px;
-    min-height: 200px;
+    max-width: 350px;
+    min-height: 300px;
     display: flex;
 }
 
@@ -44,7 +41,6 @@
 }
 
 .service-card {
-    width: 100%;
     max-width: 500px;
     display: flex;
     font-size: 20px;

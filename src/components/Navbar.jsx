@@ -77,7 +77,8 @@ const Navbar = () => {
           activeClass="active"
           className="list-btn"
         >
-          Services
+          <li>Services</li>
+
         </Link>
         <Link
           to="contact"
@@ -92,9 +93,9 @@ const Navbar = () => {
           <li> Contact</li>
         </Link>
 
-        <button onClick={toggleTheme} className="toggle-theme">
+        {/* <button onClick={toggleTheme} className="toggle-theme">
           {theme === 'light' ? <FaMoon /> : <FaSun />}
-        </button>
+        </button> */}
       </ul>
     </nav>
   );

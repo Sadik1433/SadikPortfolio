@@ -51,7 +51,7 @@ const ContactForm = () => {
             </ul>
           </div>
         </div>
-        <div className="form-container" data-aos="slide-left">
+        <div className="form-container" data-aos="slide-right">
           <form onSubmit={handleSubmit} className="contact-form">
             <h2>Contact Me</h2>
             <label>Email:</label>

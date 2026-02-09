@@ -1,0 +1,24 @@
+.footer-page {
+  min-height: 100px;
+  padding: 10px 20px;
+  background-color: var(--bg-color);
+}
+.footer-container {
+  height: 60px;
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--heading-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px var(--shadow-color);
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    font-size: 18px;
+    font-weight: 900;
+  }
+}

@@ -1,43 +1,8 @@
 import "./CssFile/hero.css";
-import profile from "./assets/avatar.png";
-import { FaInstagram, FaGithub, FaLinkedin, FaDownload } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa6";
+import profile from './assets/profile-1.png'
 import Icons from "./Icons";
-
-const socialData = [
-  {
-    id: 1,
-    icon: <FaInstagram size={30} />,
-    color: "#E1306C",
-    name: "User",
-    username: "insta_user",
-    followers: "800",
-  },
-  {
-    id: 2,
-    icon: <FaGithub size={30} />,
-    color: "#ffffff",
-    name: "Sadik",
-    username: "sadik-dev",
-    followers: "120",
-  },
-  {
-    id: 3,
-    icon: <FaLinkedin size={30} />,
-    color: "#0A66C2",
-    name: "Sadik",
-    username: "sadik",
-    followers: "500",
-  },
-  {
-    id: 4,
-    icon: <FaWhatsapp size={30} />,
-    color: "#0ac216",
-    name: "Sadik",
-    username: "sadik",
-    followers: "500",
-  },
-];
+import { FaDownload } from "react-icons/fa";
+import {socialData} from '../data/data.jsx'
 
 const Hero = () => {
   return (
