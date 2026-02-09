@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,43 +7,33 @@
 
 :root {
   --bg-color: #f4fbfa;
-  --navbar-bg-color: #2ab3e061;
-  --card-color: #ffffff;
-  --input-color: #dff3f1;
-
+  --navbar-bg-color: #f0f0f0;
   --text-color: #1f3d3a;
-  /* --heading-color:#0d1b97; */
-  --heading-color: #0f766e;
-
-  --btn-color: rgba(20, 184, 166, 0.85);
-  --btn-hover-color: #0d9488;
-  --button-text-color: #ffffff;
-
-  --shadow: rgba(15, 118, 110, 0.25);
+  --heading-color: #7f38ec;
+  --sub-heading-color: #007bff;
+  --shadow-color: #3d5cf7;
+  --input-color: cyan;
 }
 
 [data-theme="dark"] {
   --bg-color: #030b1c;
   --navbar-bg-color: #020617;
-  --card-color: #1e293b;
-  --input-color: #334155;
-
   --text-color: #e5e7eb;
-  --heading-color: #5eead4;
-
-  --btn-color: rgba(251, 113, 133, 0.85);
-  --btn-hover-color: #fb7185;
-  --button-text-color: #020617;
-  --shadow: rgba(94, 234, 212, 0.35);
+  --heading-color: #7f38ec;
+  --sub-heading-color: #007bff;
+  --shadow-color: #4bf0fce4;
 }
 
-body{
-  overflow: hidden;
+body {
+  overflow-x: hidden;
   overflow-y: scroll;
 }
+
 ::-webkit-scrollbar {
   display: none;
 }
-li{
+
+li,a {
   list-style: none;
+  text-decoration: none;
 }

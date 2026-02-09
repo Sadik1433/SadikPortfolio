@@ -92,7 +92,7 @@ const Skills = () => {
       <div className="skills-section" data-aos="fade-up">
         <div className="about-section">
           <h1 className="about-header">About Me</h1>
-          <p className="skills-para">
+          <p className="skills-para" data-aos="fade-right">
             Hello! I'm a passionate and enthusiastic
             <strong> Web Developer </strong> with a strong foundation in
             <strong>
@@ -104,7 +104,7 @@ const Skills = () => {
             clean, functional, and user-centered solutions.
           </p>
         </div>
-        <div className="education">
+        <ul className="education">
           <h1 className="edu-head">Education</h1>
           {educationData.map((each, index) => (
             <li
@@ -118,12 +118,12 @@ const Skills = () => {
               <span className="year">{each.year}</span>
             </li>
           ))}
-        </div>
+        </ul>
       </div>
       <ul className="skills-icons-container">
         {skills.map((skill, index) => (
-          <li className="skill-card" key={index} 
-              data-aos={aosAnimations[index % aosAnimations.length]}>
+          <li className="skill-card" key={index}
+            data-aos={aosAnimations[index % aosAnimations.length]}>
             <div className="icon-container">
               <span>{skill.icon}</span>
               <h3>{skill.title}</h3>

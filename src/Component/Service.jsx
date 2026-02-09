@@ -57,7 +57,7 @@ const Services = () => {
       <div className="service-header">
         <h2 className="services-heading">Services</h2>
       </div>
-      <div className="service-container" data-aos="fade-right">
+      <div className="service-container">
         <ul className="services-grid">
           {servicesData.map((service, index) => (
             <li

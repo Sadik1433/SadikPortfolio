@@ -44,10 +44,13 @@ const projectData = [
   },
 ];
 
+
+const aosAnimations = ["fade-right", "fade-left"];
+
 const Project = () => {
   return (
     <section id="project" className="project-section">
-      <div className="project-para-container">
+      <div className="project-para-container" data-aos="fade-down">
         <h1 className="project-header">Projects</h1>
         <p className="project-para">
           A showcase of interactive and responsive web applications built using
@@ -60,6 +63,8 @@ const Project = () => {
           <li
             className="project-card"
             key={index}
+            data-aos={aosAnimations[index % aosAnimations.length]}
+            data-aos-delay={index * 100}
             style={{
               backgroundImage: `url(${profile})`,
               backgroundSize: "contain",

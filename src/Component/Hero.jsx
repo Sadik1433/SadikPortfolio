@@ -1,6 +1,6 @@
 import "./CssFile/hero.css";
 import profile from "./assets/avatar.png";
-import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaGithub, FaLinkedin, FaDownload } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa6";
 import Icons from "./Icons";
 
@@ -39,9 +39,6 @@ const socialData = [
   },
 ];
 
-{
-  socialData.map((item, i) => <Icons key={i} {...item} />);
-}
 const Hero = () => {
   return (
     <section id="hero" className="hero-container">
@@ -54,9 +51,9 @@ const Hero = () => {
           </div>
           <div className="text-content-container">
             <p className="text-content">
-              I'm a passionate Web Developer with expertise in React, Java,
-              python. I love building intuitive and efficient solutions that
-              make a difference.
+              I am a passionate Full Stack Developer with expertise in React, Java,
+              and Python. I dedicate myself to building intuitive and efficient
+              web solutions that make a real difference.
             </p>
           </div>
           <div className="icons-container">
@@ -65,7 +62,11 @@ const Hero = () => {
             ))}
           </div>
           <div className="resume-container">
-            <button className="resume-btn">Download</button>
+            <a href="/Sadik_Resume.pdf" download="Sadik_Resume.pdf" >
+              <button className="resume-btn">
+                Resume  <FaDownload size={25} />
+              </button>
+            </a>
           </div>
         </div>
         <div className="image-section" data-aos="fade-left">

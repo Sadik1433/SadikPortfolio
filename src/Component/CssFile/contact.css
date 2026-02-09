@@ -5,24 +5,38 @@
   flex-direction: column;
   padding: 10px 0px;
 }
+
 .contact-heading-container {
   width: 100%;
   text-align: center;
   margin: 10px auto;
 }
+.contact-heading{
+  color: var(--heading-color); 
+  font-size: 40px;
+  text-shadow: 1px 1px 5px var(--shadow-color);
+  text-transform: uppercase;
+}
+
 .contact-container {
   display: flex;
- }
-.contact-para-container {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-context-container {
   max-width: 800px;
   text-align: justify;
   padding: 10px 20px;
   line-height: 40px;
   font-size: 20px;
 }
+
 .form-container {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
 }
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -30,26 +44,30 @@
   gap: 15px;
   border: 1px solid transparent;
   border-radius: 8px;
-  box-shadow: 1px 1px 5px white;
+  box-shadow: 1px 1px 5px var(--shadow-color);
   margin: 10px auto;
 }
+
 .contact-form h2 {
   text-align: center;
-  color: var(--text-color);
+  color: var(--heading-color);
   font-size: 30px;
 }
+
 .contact-form label {
   font-size: 25px;
-  color: var(--heading-color);
+  color: var(--sub-heading-color);
 }
+
 .contact-form input,
 textarea {
   border: 1px solid transparent;
   border-radius: 10px;
   padding: 10px 5px;
   background-color: var(--bg-color);
-  box-shadow: 1px 1px 5px white;
+  box-shadow: 1px 1px 5px var(--shadow-color);
 }
+
 .submit-btn {
   align-self: center;
   width: 150px;
@@ -58,38 +76,23 @@ textarea {
   box-shadow: 1px 1px 5px white;
   color: var(--text-color);
   font-size: 18px;
-  font-weight: 900; 
-  border: 1px solid transparent ;
+  font-weight: 900;
+  border: 1px solid transparent;
   border-radius: 8px;
 }
-.footer-content{
-  position: relative;
-  height: 500px;
-  padding: 10px 20px;
-  display: flex;
-  flex-direction: column;
-}
-.footer-content h3{
-  font-size: 30px;
+
+.contact-caption {
+  font-size: 22px;
   color: var(--text-color);
+  padding-left: 10px 20px;
 }
-.footer-content p{
-  font-size: 26px;
+
+.contact-caption-list {
+  padding: 5px 10px;
+  font-size: 18px;
 }
-.footer-content-container{
-  margin: 10px auto;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  font-size: 26px;
-  margin: 20px 0px;
-}
-.footer-links, .footer-socials{
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.footer-copy{
-  text-align: center;
-  margin: 20px auto;
+
+.contact-caption span {
+  font-weight: bold;
+  color: var(--sub-heading-color);
 }

@@ -1,4 +1,4 @@
-.hero-container{
+.hero-container {
     min-height: 100vh;
     max-height: min-content;
     background-color: var(--bg-color);
@@ -8,74 +8,127 @@
     align-items: center;
     padding: 20px 0px;
 }
-.content-container{
+
+.content-container {
     min-height: 500px;
-    min-width: 1200px;
-    display: flex; 
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
-.header-section{
-    width: 800px;
-    max-height: 480px;
+
+.header-section {
+    width: 100%;
+    max-width: 800px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0px 10px;
     text-align: justify;
 }
-.name-section{
+
+.name-section {
     margin: 10px 0px;
     color: var(--head-color);
-    font-size: 20px;    
+    font-size: 20px;
     font-family: sans-serif;
 }
-.icons-container{
+
+.icons-container {
     min-height: 120px;
     display: flex;
     align-items: flex-end;
     gap: 80px;
-    padding: 10px 20px ;
+    padding: 10px 20px;
 }
-.text-content-container{
+
+.text-content-container {
     padding: 10px 0px;
 }
+
 .text-content {
     font-weight: 200;
-    line-height: 50px;
-    font-size: 30px;
+    line-height: 40px;
+    font-size: 28px;
 }
-.name-head{
-    color: var(--head-color);
+
+.name-head {
+    background: linear-gradient(to right, var(--heading-color), var(--sub-heading-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     position: relative;
     left: 90px;
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-style: italic;
 }
-.icons-container{
-    width: 100%;   
+
+.icons-container {
+    width: 100%;
     margin: 20px auto;
-    padding: 18px 15px ;
+    padding: 18px 15px;
     display: flex;
     justify-content: center;
     cursor: pointer;
 }
-/* .icons{
-    background-color: blue;
-    border: 1px solid transparent;
-    border-radius: 50%;
-    padding:10px;
-    font-size: 11px;
-} */
-.resume-container{
+
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .header-section {
+        align-items: center;
+        text-align: center;
+    }
+
+    .name-head {
+        left: 0;
+    }
+
+    .text-content {
+        font-size: 24px;
+        line-height: 35px;
+    }
+
+    .image-section .profile-image {
+        max-width: 300px;
+    }
+}
+
+.resume-container {
     width: 100%;
     display: flex;
     justify-content: center;
     margin: 10px auto;
 }
-.resume-btn{
+
+.resume-btn {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    gap: 10px;
     padding: 10px 20px;
     border: 1px solid transparent;
     border-radius: 20px;
     cursor: pointer;
+    color: var(--text-color);
+    background-color: var(--navbar-bg-color);
+    box-shadow: 0 0 5px var(--shadow-color);
 }
-.image-section .profile-image{
+
+.resume-btn:hover {
+    background-color: var(--heading-color);
+    color: var(--text-color);
+    transition: all 0.5s ease-in-out;
+}
+
+.image-section .profile-image {
     max-width: 380px;
     padding: 5px 10px;
 }

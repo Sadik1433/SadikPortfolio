@@ -25,7 +25,7 @@ const ContactForm = () => {
       </div>
       <div className="contact-container" data-aos="fade-right">
         <div className="contact-context-container">
-          <div className="contact-para-container">
+          <div>
             <p>
               I'm skilled in Java, Python, JavaScript, SQL, HTML, CSS, React,
               and Node.js. I specialize in building full-stack web applications
@@ -34,30 +34,21 @@ const ContactForm = () => {
               through the form below!
             </p>
           </div>
-          <div className="footer-content">
-            <h3>Sadik</h3>``
-            <p>Frontend Developer • React Enthusiast</p>
-            <div className="footer-content-container">
-              <div className="footer-links">
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-                <a href="#about">About</a>
-              </div>
-
-              <div className="footer-socials">
-                <a href="https://github.com/" target="_blank">
-                  GitHub
-                </a>
-                <a href="https://linkedin.com/" target="_blank">
-                  LinkedIn
-                </a>
-                <a href="mailto:youremail@gmail.com">Email</a>
-              </div>
+          <div className="contact-caption">
+            <div>
+              <p>
+                I build modern, scalable web applications with clean UI and
+                efficient backend systems. Why work with me?
+              </p>
             </div>
-
-            <p className="footer-copy">
-              © {new Date().getFullYear()} Your Name. All rights reserved.
-            </p>
+            <span>👉 Have an idea ?</span>
+            <ul className="contact-caption-list">
+              <li>📩 Project discussion</li>
+              <li>🚀 Startup MVP</li>
+              <li>🛠 Bug fixes & improvements</li>
+              <li>🎨 UI redesign</li>
+              <li>Fill the form — I’ll get back to you within 24 hours.</li>
+            </ul>
           </div>
         </div>
         <div className="form-container" data-aos="slide-left">

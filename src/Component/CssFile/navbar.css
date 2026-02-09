@@ -13,6 +13,7 @@
   padding: 0px 20px;
   box-shadow: 0 0 5px var(--text-color);
 }
+
 .logo-container {
   min-width: 80px;
   position: relative;
@@ -20,6 +21,7 @@
   justify-content: center;
   gap: 10px;
 }
+
 .logo {
   width: 50px;
   height: 50px;
@@ -27,6 +29,7 @@
   left: -19px;
   color: #7f38ec;
 }
+
 .logo-text {
   position: absolute;
   left: 39px;
@@ -36,6 +39,7 @@
   font-weight: 900;
   color: #7f38ec;
 }
+
 .menu-icon {
   display: none;
   font-size: 1.8rem;
@@ -48,6 +52,7 @@
   display: flex;
   gap: 20px;
 }
+
 .list-btn {
   min-width: 80px;
   text-align: center;
@@ -61,13 +66,10 @@
 .active {
   position: relative;
   left: 0;
-  color: var(--text-color);
+  color: var(--heading-color);
   background: transparent;
   border-radius: 2px;
-  border-bottom: 1px solid var(--text-color);
-  box-shadow:
-    0px 5px 2px rgba(12, 174, 219, 0.895);
-    /* inset -0px -10px 18px rgba(8, 221, 232, 0.7); */
+  border-bottom: 3px solid var(--heading-color);
   transition: all 1s ease-in-out;
   cursor: pointer;
 }
@@ -79,14 +81,17 @@
   color: var(--text-color);
   border: none;
 }
+
 @media (max-width: 768px) {
   .navbar-container {
     min-height: 80px;
     justify-content: flex-end;
   }
+
   .menu-icon {
     display: block;
   }
+
   .nav-links {
     position: absolute;
     top: 72px;

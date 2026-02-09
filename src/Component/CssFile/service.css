@@ -1,50 +1,69 @@
-.service-section{
+.service-section {
     min-height: 100vh;
     max-height: min-content;
     background-color: var(--bg-color);
     color: var(--text-color);
     display: flex;
     flex-direction: column;
-    padding: 10px 20px;
-
+    padding: 10px 20px 40px 20px;
 }
-.service-header{
+
+.service-header {
     align-self: center;
     margin: 10px auto;
 }
-.services-heading{
-    font-size: 36px;
+
+.services-heading {
     color: var(--heading-color);
+    font-size: 40px;
+    text-shadow: 1px 1px 5px var(--shadow-color);
+    text-transform: uppercase;
 }
-.service-container{
+
+.service-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
-.service-image .service-img{
-    width: 400px;
+
+.service-image .service-img {
+    width: 100%;
+    max-width: 400px;
     min-height: 200px;
     display: flex;
 }
-.services-grid{
+
+.services-grid {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 10px;
     align-self: center;
 }
-.service-card{
+
+.service-card {
+    width: 100%;
+    max-width: 500px;
     display: flex;
     font-size: 20px;
-    padding: 10px 2px ;
+    padding: 5px 0px;
+    gap: 20px;
 }
-.service-icon{
+
+.service-icon {
     width: 60px;
     align-self: center;
 }
-.service-content{
+
+.service-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     line-height: 35px;
+}
+
+.service-content h3 {
+    color: var(--sub-heading-color);
 }

@@ -22,12 +22,12 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-  
+
   return (
     <nav className="navbar-container">
-      <div className="menu-icon" onClick={toggleMenu}>
+      <button className="menu-icon" onClick={toggleMenu}>
         ☰
-      </div>
+      </button>
       <ul className={`nav-links ${isOpen ? "active" : ""}`}>
         <Link
           to="hero"
@@ -93,7 +93,7 @@ const Navbar = () => {
         </Link>
 
         <button onClick={toggleTheme} className="toggle-theme">
-         {theme === 'light' ? <FaMoon /> : <FaSun />}
+          {theme === 'light' ? <FaMoon /> : <FaSun />}
         </button>
       </ul>
     </nav>

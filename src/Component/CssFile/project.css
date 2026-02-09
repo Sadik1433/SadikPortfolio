@@ -3,17 +3,23 @@
   max-height: min-content;
   background-color: var(--bg-color);
   color: var(--text-color);
-  padding: 10px 20px;
+  padding: 20px 20px 40px 20px;
 }
+
 .project-para-container {
   display: flex;
   flex-direction: column;
   margin: 10px auto;
 }
+
 .project-header {
   text-align: center;
-  font-size: 35px;
+  font-size: 40px;
+  text-shadow: 1px 1px 5px var(--shadow-color);
+  text-transform: uppercase;
+  color: var(--heading-color);
 }
+
 .project-para {
   text-align: center;
   font-size: 25px;
@@ -21,24 +27,28 @@
   line-height: 50px;
   margin: 10px auto;
 }
+
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 15px;
+  justify-items: center;
 }
+
 .project-card {
   position: relative;
-  width: 320px;
+  width: 100%;
+  max-width: 350px;
   background: #111;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 1px 20px rgba(232, 217, 217, 0.671);
+  box-shadow: 0 1px 10px var(--shadow-color);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .project-card:hover {
   transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
 }
 
 .project-image img {
@@ -49,7 +59,8 @@
 
 .project-content {
   padding: 18px;
-  color: #fff;
+  color: var(--sub-heading-color);
+  text-shadow: 1px 1px 2px var(--heading-color);
 }
 
 .project-content h3 {
