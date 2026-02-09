@@ -93,9 +93,9 @@ const Navbar = () => {
           <li> Contact</li>
         </Link>
 
-        {/* <button onClick={toggleTheme} className="toggle-theme">
+        <button onClick={toggleTheme} className="toggle-theme">
           {theme === 'light' ? <FaMoon /> : <FaSun />}
-        </button> */}
+        </button>
       </ul>
     </nav>
   );
