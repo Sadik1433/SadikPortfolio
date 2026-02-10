@@ -15,7 +15,6 @@
 .project-header {
   text-align: center;
   font-size: 40px;
-  : 1px 1px 5px var(--shadow-color);
   text-transform: uppercase;
   color: var(--heading-color);
 }

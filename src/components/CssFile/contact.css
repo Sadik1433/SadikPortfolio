@@ -28,12 +28,20 @@
 
 .contact-context-container {
   max-width: 800px;
-  text-align: justify;
   padding: 10px 20px;
-  line-height: 40px;
-  font-size: 20px;
+}
+.contact-context{
+  text-align: justify;
+  font-size: 18px;
+  margin: 10px 0px;
+  line-height: 35px;
 }
 
+.contact-details-list h4{
+  font-size: 25px;
+  font-weight: 900;
+  color: var(--heading-color);
+}
 .form-container {
   width: 100%;
   max-width: 400px;
@@ -83,18 +91,43 @@ textarea {
   border-radius: 8px;
 }
 
-.contact-caption {
-  font-size: 22px;
-  color: var(--text-color);
-  padding-left: 10px 20px;
+.contact-details-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
 }
 
-.contact-caption-list {
-  padding: 5px 10px;
+.contact-details-list-item {
+  width: 100%;
+  max-width: 400px;
+  max-height: 70px;
+  padding: 5px 2px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border: 1px solid transparent;
+  box-shadow: 1px 1px 5px var(--shadow-color);
+  border-radius: 8px;
+}
+
+.contact-details-list-item-icon {
+  margin: 0px 5px;
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.contact-details-list-item h5 {
+  font-size: 25px;
+  font-weight: 900;
+  font-style: italic;
+  color: var(--heading-color);
+}
+
+.contact-details-list-item span {
   font-size: 18px;
-}
-
-.contact-caption span {
-  font-weight: bold;
-  color: var(--sub-heading-color);
+  font-weight: 500;
+  color: var(--text-color);
 }

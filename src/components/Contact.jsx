@@ -1,5 +1,9 @@
 import { useState } from "react";
 import "./CssFile/contact.css";
+import { contactDetails } from "../data/data";
+
+
+const aosAnimations = ["fade-right", "fade-left"];
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -25,7 +29,7 @@ const ContactForm = () => {
       </div>
       <div className="contact-container" data-aos="fade-right">
         <div className="contact-context-container">
-          <div>
+          <div className="contact-context">
             <p>
               I'm skilled in Java, Python, JavaScript, SQL, HTML, CSS, React,
               and Node.js. I specialize in building full-stack web applications
@@ -34,22 +38,25 @@ const ContactForm = () => {
               through the form below!
             </p>
           </div>
-          <div className="contact-caption">
-            <div>
-              <p>
-                I build modern, scalable web applications with clean UI and
-                efficient backend systems. Why work with me?
-              </p>
-            </div>
-            <span>👉 Have an idea ?</span>
-            <ul className="contact-caption-list">
-              <li>📩 Project discussion</li>
-              <li>🚀 Startup MVP</li>
-              <li>🛠 Bug fixes & improvements</li>
-              <li>🎨 UI redesign</li>
-              <li>Fill the form — I’ll get back to you within 24 hours.</li>
-            </ul>
-          </div>
+          <ul className="contact-details-list">
+            <h4>Conatct Me</h4>
+            {contactDetails.map((e, index) => (
+              <li className="contact-details-list-item" key={index} data-aos={aosAnimations[index % aosAnimations.length]}
+                data-aos-delay={index * 100}>
+                <div className="contact-details-list-item-icon">
+                  {e.icon}
+                </div>
+                <div>
+                  <h5>
+                    {e.name}
+                  </h5>
+                  <span>
+                    {e.value}
+                  </span>
+                </div>
+              </li>
+            ))}
+          </ul>
         </div>
         <div className="form-container" data-aos="slide-right">
           <form onSubmit={handleSubmit} className="contact-form">

@@ -1,4 +1,4 @@
-
+import { FaPhoneVolume, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa6";
 import {
@@ -14,7 +14,6 @@ import {
     FaJsSquare,
     FaReact,
     FaNodeJs,
-    FaDownload,
 } from "react-icons/fa";
 
 export const servicesData = [
@@ -197,3 +196,36 @@ export const socialData = [
         name: "Whatsapp",
     },
 ];
+
+export const contactDetails = [
+    {
+        id: 1,
+        icon: <FaPhoneVolume size={30} />,
+        name: "Phone",
+        value: "+91 1234567890",
+    },
+    {
+        id: 2,
+        icon: <FaEnvelope size={30} />,
+        name: "Email",
+        value: "sadik@gmail.com",
+    },
+    {
+        id: 3,
+        icon: <FaLinkedin size={30} />,
+        name: "Linkedin",
+        value: "https://www.linkedin.com/in/sadik/",
+    },
+    {
+        id: 4,
+        icon: <FaInstagram size={30} />,
+        name: "Instagram",
+        value: "https://www.instagram.com/sadik/",
+    },
+    {
+        id: 5,
+        icon: <FaMapMarkerAlt size={30} />,
+        name: "Address",
+        value: "123 Main Street, City, Country",
+    },
+]
